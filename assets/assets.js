@@ -41,6 +41,9 @@ import ai_icon from "./ai_icon.png";
 import work1 from "./work1.png";
 import work2 from "./work2.png";
 import work3 from "./work3.png";
+import aws_associate from "./aws_associate.png";
+import leetcode from "./leetcode.png";
+import neetcode from "./neetcode.avif";
 
 export const assets = {
   user_image,
@@ -86,6 +89,9 @@ export const assets = {
   work1,
   work2,
   work3,
+  aws_associate,
+  leetcode,
+  neetcode,
 };
 
 export const workData = [
@@ -151,7 +157,7 @@ export const infoList = [
     icon: assets.code_icon,
     iconDark: assets.code_icon_dark,
     title: "Languages",
-    description: "Java, Python, TypeScript, React Js, Next Js,",
+    description: "Java, Python, TypeScript, C, SQL",
   },
   {
     icon: assets.edu_icon,
@@ -173,4 +179,32 @@ export const toolsData = [
   assets.mongodb,
   assets.figma,
   assets.git,
+];
+
+export const certsData = [
+  {
+    title: "AWS Developer Associate",
+    description: "Cloud development & deployment expertise",
+    date: "Issued Jun 2024",
+    badge: "Certified",
+    url: "https://www.credly.com/badges/6144d2ae-8a14-456f-b071-aac16e7d09a5/linked_in_profile",
+    bgImage: assets.aws_associate.src,
+  },
+  {
+    title: "LeetCode Profile",
+    description: "50+ problems solved across all difficulty levels",
+    date: "Active daily",
+    badge: "Active",
+    url: "https://leetcode.com/u/karthik_Edhala/",
+    bgImage: assets.leetcode.src,
+  },
+  {
+    title: "NeetCode Roadmap",
+    description:
+      "Structured roadmap for advanced DSA practice and problem-solving mastery",
+    date: "2023 – Present",
+    badge: "In Progress",
+    url: "https://neetcode.io/roadmap",
+    bgImage: assets.neetcode.src,
+  },
 ];
