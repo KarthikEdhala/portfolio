@@ -8,7 +8,6 @@ import Navbar from "../components/Navbar";
 import Services from "../components/Services";
 import Work from "../components/Work";
 import Certifications from "@/components/Certifications";
-// import FloatingStickers from "@/components/FloatingStickers";
 
 export default function Home() {
   const [isDarkMode, setIsDarkMode] = useState(false);
@@ -37,8 +36,6 @@ export default function Home() {
 
   return (
     <>
-      {/* <FloatingStickers isDarkMode={isDarkMode} count={5} /> */}
-
       <Navbar isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode} />
       <Header isDarkMode={isDarkMode} />
       <About isDarkMode={isDarkMode} />

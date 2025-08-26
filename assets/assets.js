@@ -44,6 +44,13 @@ import work3 from "./work3.png";
 import aws_associate from "./aws_associate.png";
 import leetcode from "./leetcode.png";
 import neetcode from "./neetcode.avif";
+import aws from "./aws.webp";
+import docker from "./docker.png";
+import jenkins from "./jenkins.jpg";
+import jira from "./jira.png";
+import kubernetes from "./kubernetes.png";
+import postman from "./postman.png";
+import postgres from "./postgres.webp";
 
 export const assets = {
   user_image,
@@ -92,6 +99,13 @@ export const assets = {
   aws_associate,
   leetcode,
   neetcode,
+  aws,
+  postman,
+  jira,
+  jenkins,
+  kubernetes,
+  docker,
+  postgres,
 };
 
 export const workData = [
@@ -127,28 +141,28 @@ export const serviceData = [
     title: "Full-Stack Web Development",
     description:
       "I build secure and scalable web applications with modern frameworks.",
-    link: "",
+    link: "http://localhost:8080",
   },
   {
     icon: assets.cloud_icon,
     title: "Cloud-Native Solutions",
     description:
       "I deploy and optimize applications on AWS for reliability and scale.",
-    link: "",
+    link: "http://localhost:8080",
   },
   {
     icon: assets.api_icon,
     title: "API Development & Integration",
     description:
       "I create and integrate REST and GraphQL APIs for seamless systems.",
-    link: "",
+    link: "http://localhost:8080",
   },
   {
     icon: assets.ai_icon,
     title: "AI-Powered Applications",
     description:
       "I integrate AI tools like OpenAI to add automation and intelligence.",
-    link: "",
+    link: "http://localhost:8080",
   },
 ];
 
@@ -175,10 +189,17 @@ export const infoList = [
 
 export const toolsData = [
   assets.vscode,
+  assets.git,
+  assets.aws,
+  assets.docker,
+  assets.kubernetes,
+  assets.jenkins,
+  assets.postman,
+  assets.jira,
   assets.firebase,
   assets.mongodb,
+  assets.postgres,
   assets.figma,
-  assets.git,
 ];
 
 export const certsData = [
