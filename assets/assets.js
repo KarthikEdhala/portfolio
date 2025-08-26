@@ -51,6 +51,7 @@ import jira from "./jira.png";
 import kubernetes from "./kubernetes.png";
 import postman from "./postman.png";
 import postgres from "./postgres.webp";
+import devops from "./devops.png";
 
 export const assets = {
   user_image,
@@ -106,6 +107,7 @@ export const assets = {
   kubernetes,
   docker,
   postgres,
+  devops,
 };
 
 export const workData = [
@@ -204,9 +206,18 @@ export const toolsData = [
 
 export const certsData = [
   {
+    title: "AWS DevOps Engineer – Professional",
+    description:
+      "Advanced skills in continuous delivery, automation, monitoring, and resilient AWS deployments",
+    date: "Issued Aug 2025",
+    badge: "Certified",
+    url: "https://www.credly.com/badges/6c330606-ebc3-45a0-87ab-ab0f492d2be0/linked_in_profile",
+    bgImage: assets.devops.src,
+  },
+  {
     title: "AWS Developer Associate",
     description: "Cloud development & deployment expertise",
-    date: "Issued Jun 2024",
+    date: "Issued Jun 2025",
     badge: "Certified",
     url: "https://www.credly.com/badges/6144d2ae-8a14-456f-b071-aac16e7d09a5/linked_in_profile",
     bgImage: assets.aws_associate.src,
