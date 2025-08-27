@@ -4,41 +4,43 @@ import React from "react";
 import { motion } from "motion/react";
 
 const Work = ({ isDarkMode }) => {
-  // Enhanced project data with detailed descriptions and tools
   const enhancedWorkData = [
     {
       ...workData[0],
-      detailedDescription: "A comprehensive AI chatbot platform that enables businesses to create, deploy, and manage intelligent conversational agents. Features include natural language processing, multi-channel deployment, and advanced analytics dashboard.",
+      detailedDescription:
+        "A comprehensive AI chatbot platform that enables businesses to create, deploy, and manage intelligent conversational agents. Features include natural language processing, multi-channel deployment, and advanced analytics dashboard.",
       tools: [
         { name: "React.js", icon: "/react-icon.png" },
         { name: "Node.js", icon: "/nodejs-icon.png" },
         { name: "OpenAI", icon: "/openai-icon.png" },
         { name: "MongoDB", icon: "/mongodb-icon.png" },
-        { name: "AWS", icon: "/aws-icon.png" }
-      ]
+        { name: "AWS", icon: "/aws-icon.png" },
+      ],
     },
     {
       ...workData[1],
-      detailedDescription: "An intelligent customer response system powered by AI agents that automatically handles customer inquiries, provides instant responses, and escalates complex issues to human agents when needed.",
+      detailedDescription:
+        "An intelligent customer response system powered by AI agents that automatically handles customer inquiries, provides instant responses, and escalates complex issues to human agents when needed.",
       tools: [
         { name: "Next.js", icon: "/nextjs-icon.png" },
         { name: "Python", icon: "/python-icon.png" },
         { name: "FastAPI", icon: "/fastapi-icon.png" },
         { name: "PostgreSQL", icon: "/postgres-icon.png" },
-        { name: "Docker", icon: "/docker-icon.png" }
-      ]
+        { name: "Docker", icon: "/docker-icon.png" },
+      ],
     },
     {
       ...workData[2],
-      detailedDescription: "A sophisticated document Q&A system that allows users to upload PDF documents and ask questions about their content. Uses advanced NLP and vector embeddings for accurate information retrieval.",
+      detailedDescription:
+        "A sophisticated document Q&A system that allows users to upload PDF documents and ask questions about their content. Uses advanced NLP and vector embeddings for accurate information retrieval.",
       tools: [
         { name: "React.js", icon: "/react-icon.png" },
         { name: "Python", icon: "/python-icon.png" },
         { name: "LangChain", icon: "/langchain-icon.png" },
         { name: "Pinecone", icon: "/pinecone-icon.png" },
-        { name: "OpenAI", icon: "/openai-icon.png" }
-      ]
-    }
+        { name: "OpenAI", icon: "/openai-icon.png" },
+      ],
+    },
   ];
 
   return (
@@ -49,6 +51,7 @@ const Work = ({ isDarkMode }) => {
       id="work"
       className="w-full px-[12%] py-20 scroll-mt-20 bg-gradient-to-b from-transparent via-gray-50/30 to-white/50 dark:via-gray-900/20 dark:to-gray-900/30"
     >
+      {/* Section Headers */}
       <motion.h4
         initial={{ y: -20, opacity: 0 }}
         whileInView={{ y: 0, opacity: 1 }}
@@ -57,7 +60,6 @@ const Work = ({ isDarkMode }) => {
       >
         Portfolio
       </motion.h4>
-
       <motion.h2
         initial={{ y: -20, opacity: 0 }}
         whileInView={{ y: 0, opacity: 1 }}
@@ -66,16 +68,17 @@ const Work = ({ isDarkMode }) => {
       >
         Featured Projects
       </motion.h2>
-
       <motion.p
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         transition={{ delay: 0.7, duration: 0.5 }}
         className="text-center max-w-4xl mx-auto mt-6 mb-16 font-Ovo text-lg leading-relaxed text-gray-700 dark:text-gray-300"
       >
-        Transforming innovative ideas into impactful digital solutions. Each project represents a unique challenge solved through cutting-edge technology, thoughtful architecture, and meticulous execution that delivers real-world value.
+        Transforming innovative ideas into impactful digital solutions. Each
+        project represents a unique challenge solved through cutting-edge
+        technology, thoughtful architecture, and meticulous execution that
+        delivers real-world value.
       </motion.p>
-
       {/* 3-Column Grid Layout */}
       <motion.div
         initial={{ opacity: 0 }}
@@ -99,14 +102,13 @@ const Work = ({ isDarkMode }) => {
               className="block h-full"
             >
               <div className="relative overflow-hidden rounded-2xl bg-white dark:bg-gray-800 shadow-lg hover:shadow-2xl transition-all duration-500 border border-gray-100 dark:border-gray-700 h-full flex flex-col">
-                
                 {/* Project Image */}
-                <div 
+                <div
                   className="aspect-[16/10] bg-cover bg-center relative overflow-hidden"
                   style={{ backgroundImage: `url(${project.bgImage})` }}
                 >
                   <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent opacity-60 group-hover:opacity-80 transition-opacity duration-500" />
-                  
+
                   {/* Live Status Badge */}
                   <div className="absolute top-4 left-4 z-10">
                     <div className="flex items-center gap-2 bg-green-500/90 backdrop-blur-sm text-white px-3 py-1.5 rounded-full text-xs font-semibold">
@@ -134,12 +136,12 @@ const Work = ({ isDarkMode }) => {
                     <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-2 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors duration-300 font-Ovo">
                       {project.title}
                     </h3>
-                    
+
                     {/* Project Category */}
                     <p className="text-blue-600 dark:text-blue-400 text-sm font-semibold mb-3 uppercase tracking-wide">
                       {project.description}
                     </p>
-                    
+
                     {/* Detailed Description */}
                     <p className="text-gray-600 dark:text-gray-400 text-sm leading-relaxed mb-6 font-Ovo">
                       {project.detailedDescription}
@@ -163,7 +165,7 @@ const Work = ({ isDarkMode }) => {
                               {tool.name.charAt(0)}
                             </div>
                           </div>
-                          
+
                           {/* Tooltip */}
                           <div className="absolute -top-8 left-1/2 transform -translate-x-1/2 bg-gray-900 dark:bg-gray-100 text-white dark:text-gray-900 text-xs px-2 py-1 rounded opacity-0 group-hover/tool:opacity-100 transition-opacity duration-200 whitespace-nowrap pointer-events-none z-20">
                             {tool.name}
@@ -178,11 +180,15 @@ const Work = ({ isDarkMode }) => {
                         <div className="w-2 h-2 bg-green-500 rounded-full"></div>
                         <span className="font-medium">Production Ready</span>
                       </div>
-                      
+
                       <div className="opacity-60 group-hover:opacity-100 transform translate-x-0 group-hover:translate-x-1 transition-all duration-300">
                         <div className="w-8 h-8 rounded-full border-2 border-gray-200 dark:border-gray-600 flex items-center justify-center group-hover:border-blue-500 dark:group-hover:border-blue-400 group-hover:bg-blue-50 dark:group-hover:bg-blue-900/20 transition-all duration-300">
                           <Image
-                            src={isDarkMode ? assets.right_arrow_bold_dark : assets.right_arrow_bold}
+                            src={
+                              isDarkMode
+                                ? assets.right_arrow_bold_dark
+                                : assets.right_arrow_bold
+                            }
                             alt="View project"
                             className="w-3 h-3"
                           />
@@ -195,8 +201,8 @@ const Work = ({ isDarkMode }) => {
             </a>
           </motion.div>
         ))}
-      </grid>
-
+      </motion.div>{" "}
+      {/* ✅ fixed closing tag */}
       {/* Call to Action */}
       <motion.div
         initial={{ opacity: 0, y: 30 }}
@@ -210,10 +216,11 @@ const Work = ({ isDarkMode }) => {
               Interested in My Work?
             </h3>
             <p className="text-gray-600 dark:text-gray-400 font-Ovo max-w-md">
-              Explore more projects and see how I can help bring your ideas to life
+              Explore more projects and see how I can help bring your ideas to
+              life
             </p>
           </div>
-          
+
           <div className="flex flex-col sm:flex-row gap-4">
             <a
               href="https://github.com/KarthikEdhala"
@@ -230,7 +237,7 @@ const Work = ({ isDarkMode }) => {
                 />
               </div>
             </a>
-            
+
             <a
               href="#contact"
               className="group inline-flex items-center gap-3 border-2 border-gray-300 dark:border-gray-600 text-gray-700 dark:text-gray-300 px-8 py-4 rounded-full font-semibold hover:border-blue-500 dark:hover:border-blue-400 hover:bg-blue-50 dark:hover:bg-blue-900/20 transition-all duration-300"
@@ -238,7 +245,11 @@ const Work = ({ isDarkMode }) => {
               <span>Let's Collaborate</span>
               <div className="w-5 h-5 rounded-full bg-gray-200 dark:bg-gray-700 flex items-center justify-center group-hover:bg-blue-100 dark:group-hover:bg-blue-800 transition-colors duration-300">
                 <Image
-                  src={isDarkMode ? assets.right_arrow_bold_dark : assets.right_arrow_bold}
+                  src={
+                    isDarkMode
+                      ? assets.right_arrow_bold_dark
+                      : assets.right_arrow_bold
+                  }
                   alt="Contact"
                   className="w-3 h-3"
                 />

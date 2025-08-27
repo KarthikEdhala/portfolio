@@ -184,13 +184,7 @@ const Header = () => {
         transition={{ duration: 0.8, delay: 0.5 }}
         className="relative z-10 text-3xl sm:text-5xl lg:text-6xl xl:text-7xl font-Ovo font-bold leading-tight"
       >
-        <span className="bg-gradient-to-r from-gray-900 via-gray-700 to-gray-900 dark:from-white dark:via-gray-200 dark:to-white bg-clip-text text-transparent">
-          Full-Stack
-        </span>
-        <br />
-        <span className="bg-gradient-to-r from-blue-600 via-purple-600 to-blue-800 bg-clip-text text-transparent">
-          Software Engineer
-        </span>
+        full-stack software engineer.
       </motion.h1>
 
       <motion.p
