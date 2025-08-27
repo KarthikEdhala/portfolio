@@ -112,19 +112,16 @@ function AnimatedHeaderIcons({ images, count = 6, zIndex = 0 }) {
             }}
             onAnimationComplete={() => recycle(i)}
           >
-            <motion.div 
-              className="pointer-events-auto rounded-2xl border border-white/20 bg-white/80 dark:border-gray-700/50 dark:bg-gray-800/80 backdrop-blur-md shadow-xl p-3 hover:scale-110 transition-transform duration-300"
+            <motion.div
+              className="pointer-events-auto p-1 hover:scale-110 transition-transform duration-300"
               whileHover={{ scale: 1.15, rotate: 5 }}
-              style={{
-                boxShadow: '0 8px 32px rgba(0, 0, 0, 0.1), 0 2px 8px rgba(0, 0, 0, 0.05)',
-              }}
             >
               <Image
                 src={it.src}
                 alt="technology"
-                width={it.size}
-                height={it.size}
-                className="object-contain filter drop-shadow-sm"
+                width={40}
+                height={40}
+                className="object-contain drop-shadow-sm"
                 unoptimized
               />
             </motion.div>
@@ -147,15 +144,20 @@ const Header = () => {
       <motion.div
         initial={{ scale: 0, rotate: -10 }}
         whileInView={{ scale: 1, rotate: 0 }}
-        transition={{ duration: 0.8, type: "spring", stiffness: 120, damping: 10 }}
+        transition={{
+          duration: 0.8,
+          type: "spring",
+          stiffness: 120,
+          damping: 10,
+        }}
         className="relative z-10"
       >
         <div className="relative">
           <div className="absolute inset-0 bg-gradient-to-r from-blue-500/20 to-purple-500/20 rounded-full blur-2xl scale-150"></div>
-          <Image 
-            src={assets.profile_img} 
-            alt="Karthik Edhala" 
-            className="relative rounded-full w-36 h-36 object-cover border-4 border-white/50 dark:border-gray-700/50 shadow-2xl" 
+          <Image
+            src={assets.profile_img}
+            alt="Karthik Edhala"
+            className="relative rounded-full w-36 h-36 object-cover border-4 border-white/50 dark:border-gray-700/50 shadow-2xl"
           />
         </div>
       </motion.div>
@@ -182,9 +184,13 @@ const Header = () => {
         initial={{ y: -40, opacity: 0 }}
         whileInView={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.8, delay: 0.5 }}
-        className="relative z-10 text-3xl sm:text-5xl lg:text-6xl xl:text-7xl font-Ovo font-bold leading-tight"
+        className="relative z-10 text-3xl sm:text-6xl lg:text-[66px] font-Ovo font-bold leading-tight"
       >
-        full-stack software engineer.
+        Full-Stack{" "}
+        <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
+          Software Engineer
+        </span>
+        .
       </motion.h1>
 
       <motion.p
@@ -194,9 +200,12 @@ const Header = () => {
         className="relative z-10 max-w-3xl mx-auto font-Ovo text-lg md:text-xl leading-relaxed text-gray-600 dark:text-gray-400 px-4"
       >
         Crafting scalable, high-performance applications that serve{" "}
-        <span className="font-semibold text-blue-600 dark:text-blue-400">100K+ users</span>.
-        Specialized in cloud-native architectures, intelligent automation, and enterprise-grade solutions
-        that transform ideas into impactful digital experiences.
+        <span className="font-semibold text-blue-600 dark:text-blue-400">
+          100K+ users
+        </span>
+        . Specialized in cloud-native architectures, intelligent automation, and
+        enterprise-grade solutions that transform ideas into impactful digital
+        experiences.
       </motion.p>
 
       <div className="relative z-10 flex flex-col sm:flex-row items-center gap-6 mt-8">
@@ -225,7 +234,9 @@ const Header = () => {
           download
           className="group px-8 py-4 border-2 border-gray-300 dark:border-gray-600 rounded-full flex items-center gap-3 bg-white/80 dark:bg-gray-800/80 backdrop-blur-sm font-semibold hover:border-blue-500 dark:hover:border-blue-400 transition-all duration-300"
         >
-          <span className="text-gray-700 dark:text-gray-300">Download Resume</span>
+          <span className="text-gray-700 dark:text-gray-300">
+            Download Resume
+          </span>
           <div className="w-5 h-5 rounded-full bg-gray-200 dark:bg-gray-700 flex items-center justify-center group-hover:bg-blue-100 dark:group-hover:bg-blue-900/50 transition-colors duration-300">
             <Image src={assets.download_icon} alt="" className="w-3 h-3" />
           </div>

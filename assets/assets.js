@@ -44,9 +44,9 @@ import work3 from "./work3.png";
 import aws_associate from "./aws_associate.png";
 import leetcode from "./leetcode.png";
 import neetcode from "./neetcode.avif";
-import aws from "./aws.webp";
+import aws from "./aws.png";
 import docker from "./docker.png";
-import jenkins from "./jenkins.jpg";
+import jenkins from "./jenkins.png";
 import jira from "./jira.png";
 import kubernetes from "./kubernetes.png";
 import postman from "./postman.png";
@@ -114,6 +114,8 @@ export const workData = [
   {
     title: "BotNest Platform",
     description: "AI Chatbots",
+    detailedDescription:
+      "A comprehensive AI chatbot platform that enables businesses to create, deploy, and manage intelligent conversational agents. Features include natural language processing, multi-channel deployment, and advanced analytics dashboard.",
     bgImage: "/work-1.png",
     url: "https://botnest.vercel.app/",
     gitUrl: "",
@@ -123,6 +125,8 @@ export const workData = [
   {
     title: "AI Agent Tool",
     description: "Customer Response",
+    detailedDescription:
+      "Built an AI agent using LangGraph and Watsonx that integrates tools like Google Books and Wikipedia to deliver precise, real-time responses via SSE and Next.js.",
     bgImage: "/work-2.png",
     url: "https://ai-agent-gray.vercel.app/",
     gitUrl: "",
@@ -132,6 +136,8 @@ export const workData = [
   {
     title: "Doc Q&A System",
     description: "PDF Q&A System",
+    detailedDescription:
+      "A sophisticated document Q&A system that allows users to upload PDF documents and ask questions about their content. Uses advanced NLP and vector embeddings for accurate information retrieval.",
     bgImage: "/work-3.png",
     url: "https://chat-with-pdf-challenge-gamma.vercel.app/",
     gitUrl: "",
@@ -141,6 +147,8 @@ export const workData = [
   {
     title: "AI Email Assistant",
     description: "Chrome Extension",
+    detailedDescription:
+      "An intelligent email extension that injects an AI reply button into Gmail. It analyzes the email content and generates context-aware responses in the selected tone, saving users time and effort when composing replies.",
     bgImage: "/work-4.png",
     url: "",
     gitUrl: "",
