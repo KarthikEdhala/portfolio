@@ -136,7 +136,7 @@ function AnimatedHeaderIcons({ images, count = 6, zIndex = 0 }) {
 
 const Header = () => {
   return (
-    <div className="relative w-11/12 max-w-4xl text-center mx-auto h-screen flex flex-col items-center justify-center gap-6 overflow-hidden">
+    <div className="relative w-11/12 max-w-4xl text-center mx-auto h-screen flex flex-col items-center justify-center gap-6 pt-28 md:pt-0">
       {/* Enhanced animated layer with 6 tools for richer visual */}
       <AnimatedHeaderIcons images={toolsData} count={6} zIndex={0} />
 
@@ -248,7 +248,7 @@ const Header = () => {
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         transition={{ delay: 1.5, duration: 0.5 }}
-        className="absolute bottom-8 left-1/2 transform -translate-x-1/2"
+        className="absolute bottom-8 left-1/2 transform -translate-x-1/2 hidden sm:block"
       >
         <motion.div
           animate={{ y: [0, 8, 0] }}
