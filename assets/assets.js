@@ -38,9 +38,10 @@ import right_arrow_bold_dark from "./right-arrow-bold-dark.png";
 import cloud_icon from "./cloud_icon.png";
 import api_icon from "./api_icon.png";
 import ai_icon from "./ai_icon.png";
-import work1 from "./work1.png";
-import work2 from "./work2.png";
-import work3 from "./work3.png";
+import work1 from "./work-1.png";
+import work2 from "./work-2.png";
+import work3 from "./work-3.png";
+import work4 from "./work-4.png";
 import aws_associate from "./aws_associate.png";
 import leetcode from "./leetcode.png";
 import neetcode from "./neetcode.avif";
@@ -97,6 +98,7 @@ export const assets = {
   work1,
   work2,
   work3,
+  work4,
   aws_associate,
   leetcode,
   neetcode,
@@ -116,7 +118,7 @@ export const workData = [
     description: "AI Chatbots",
     detailedDescription:
       "A comprehensive AI chatbot platform that enables businesses to create, deploy, and manage intelligent conversational agents. Features include natural language processing, multi-channel deployment, and advanced analytics dashboard.",
-    bgImage: "/work-1.png",
+    bgImage: assets.work1.src,
     url: "https://botnest.vercel.app/",
     gitUrl: "",
     technologies: [],
@@ -127,7 +129,7 @@ export const workData = [
     description: "Customer Response",
     detailedDescription:
       "Built an AI agent using LangGraph and Watsonx that integrates tools like Google Books and Wikipedia to deliver precise, real-time responses via SSE and Next.js.",
-    bgImage: "/work-2.png",
+    bgImage: assets.work2.src,
     url: "https://ai-agent-gray.vercel.app/",
     gitUrl: "",
     technologies: [],
@@ -138,7 +140,7 @@ export const workData = [
     description: "PDF Q&A System",
     detailedDescription:
       "A sophisticated document Q&A system that allows users to upload PDF documents and ask questions about their content. Uses advanced NLP and vector embeddings for accurate information retrieval.",
-    bgImage: "/work-3.png",
+    bgImage: assets.work3.src,
     url: "https://chat-with-pdf-challenge-gamma.vercel.app/",
     gitUrl: "",
     technologies: [],
@@ -149,7 +151,7 @@ export const workData = [
     description: "Chrome Extension",
     detailedDescription:
       "An intelligent email extension that injects an AI reply button into Gmail. It analyzes the email content and generates context-aware responses in the selected tone, saving users time and effort when composing replies.",
-    bgImage: "/work-4.png",
+    bgImage: assets.work4.src,
     url: "",
     gitUrl: "",
     technologies: [],
