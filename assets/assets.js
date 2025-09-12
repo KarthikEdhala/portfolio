@@ -42,6 +42,7 @@ import work1 from "./work-1.png";
 import work2 from "./work-2.png";
 import work3 from "./work-3.png";
 import work4 from "./work-4.png";
+import work5 from "./work5.jpg";
 import aws_associate from "./aws_associate.png";
 import leetcode from "./leetcode.png";
 import neetcode from "./neetcode.avif";
@@ -99,6 +100,7 @@ export const assets = {
   work2,
   work3,
   work4,
+  work5,
   aws_associate,
   leetcode,
   neetcode,
@@ -147,6 +149,26 @@ export const workData = [
     status: "Completed",
   },
   {
+    title: "🏥 Patient Management System",
+    description: "Microservices with Spring Boot",
+    detailedDescription:
+      "A microservices-based patient management system built with Java 17 and Spring Boot. The system demonstrates secure, event-driven architecture with independent services for patients, billing, notifications, and authentication. Features include gRPC for fast inter-service communication, Kafka for asynchronous messaging, and an API Gateway with JWT validation for security. Each service is containerized with Docker for consistency and scalability.",
+    bgImage: assets.work5.src,
+    url: "https://github.com/KarthikEdhala/Patient-Management",
+    gitUrl: "https://github.com/KarthikEdhala/Patient-Management",
+    technologies: [
+      "Java 17",
+      "Spring Boot",
+      "Spring Cloud Gateway",
+      "Spring Security + JWT",
+      "gRPC",
+      "Apache Kafka",
+      "PostgreSQL",
+      "Docker",
+    ],
+    status: "Completed",
+  },
+  {
     title: "AI Email Assistant",
     description: "Chrome Extension",
     detailedDescription:
@@ -165,28 +187,28 @@ export const serviceData = [
     title: "Full-Stack Web Development",
     description:
       "I build secure and scalable web applications with modern frameworks.",
-    link: "http://localhost:8080",
+    link: "/",
   },
   {
     icon: assets.cloud_icon,
     title: "Cloud-Native Solutions",
     description:
       "I deploy and optimize applications on AWS for reliability and scale.",
-    link: "http://localhost:8080",
+    link: "/",
   },
   {
     icon: assets.api_icon,
     title: "API Development & Integration",
     description:
       "I create and integrate REST and GraphQL APIs for seamless systems.",
-    link: "http://localhost:8080",
+    link: "/",
   },
   {
     icon: assets.ai_icon,
     title: "AI-Powered Applications",
     description:
       "I integrate AI tools like OpenAI to add automation and intelligence.",
-    link: "http://localhost:8080",
+    link: "/",
   },
 ];
 
